@@ -7,8 +7,8 @@
   <body>
     <a-scene>
 
+      <!-- blue sky -->
       <a-sky color="#a3d0ed"></a-sky>
-
 
 
       <a-circle position="6 9 -3" rotation="0 0 0" color="white" shadow></a-circle> 
@@ -295,10 +295,11 @@
             <img id="chezka" src="https://th.bing.com/th/id/OIP.PwkWVMlw2yE999ilSXs87AHaFS?pid=ImgDet&rs=1">
             <img id="mylaoan" src="https://cdn.pixabay.com/photo/2016/10/17/17/55/winter-1748285_640.jpg">
             <img id="waiting" src="https://www.compliancesigns.com/media/NH/policy-rules/1000/Information-Sign-NHE-32208_BLK_1000.gif">
+            
     </a-assets>
 
-    <a-image src="#mylaoan" position="6.337 4.104 -7" radius="0.05" width="1" height="1.75" scale="5 5 5">
-   </a-image>
+  <a-image src="#mylaoan" position="6.337 4.104 -7" radius="0.05" width="1" height="1.75" scale="5 5 5">
+  </a-image>
 
  <a-image src="#jade" position="-5.112 4.398 -6.919" radius="0.05" width="1" height="1.75" scale="5 5 5">
  </a-image>
@@ -308,17 +309,27 @@
 
    <a-image src="#chezka" position="0.423 4.486 -9" radius="0.05" width="1" height="1.75" scale="5 5 5">
  </a-image>
- 
-<a-image src="#waiting" position="-0.396 5.5 -28.122" radius="0.05" width="1" height="1.75" scale="20 5 5" rotation="-0.15 0 0">
+
+<a-image src="#waiting" position="10.838 5.5 -27.799" radius="0.05" width="1" height="1.75" scale="5 5 5" rotation="-0.15 0 0">
  </a-image>
-     
+
+ <a-image src="#waiting" position="-13.083 5.5 -27.671" radius="0.05" width="1" height="1.75" scale="5 5 5" rotation="-0.15 0 0">
+ </a-image>
+
+ <video src="https://github.com/jhadang/LaoanJade/blob/main/video/FiveSnowman.mp4" position= "1 5.5 -28.122" radius="0.05" width="1" height="1.75" scale="20 5 5" rotation="-0.15 0 0" autoplay>
+</video>
+
+
+
         <a-sphere color="green" radius="0.5" position="2 0.75 0" class="clickable">
         <a-cylinder color="#84651e" position="0 -0.9 0" radius="0.05"></a-cylinder>
         <a-sphere color="green" radius="0.35" position="0 0.5 0"></a-sphere>
         <a-sphere color="green" radius="0.2" position="0 0.8 0"></a-sphere>
         <a-animation begin="click" attribute="position" from="2 0.75 0" to="2.2 0.75 0" fill="both" direction="alternate" repeat="1"></a-animation>
       </a-sphere>
-      <a-entity geometry = "primitive: box; height: 2; width: 4; depth: .1" material = "shader: flat; src: url(video/FiveSnowman.mp4)" position = "0 1 -2" autoplay = "true"></a-entity>
+
+      <a-entity geometry = "primitive: box; height: 2; width: 4; depth: .1" material = "shader: flat; src: url(video/FiveSnowman.mp4); color: #fff" position="-1.149 5.772 -27.071" autoplay = "true" scale="4.46 4.99 1"></a-entity>
+      
     </a-scene>
   </body>
 </html>
